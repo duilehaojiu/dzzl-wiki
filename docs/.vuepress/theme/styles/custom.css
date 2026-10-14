@@ -1,0 +1,135 @@
+/* :root { */
+  /** 主题颜色 */
+
+  /*
+  --vp-c-brand-1: #5086a1;
+  --vp-c-brand-2: #6aa1b7;
+  --vp-c-brand-3: #8cccd5;
+  --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
+  */
+
+  /** 背景颜色 */
+
+  /*
+  --vp-c-bg: #fff;
+  --vp-c-bg-alt: #f6f6f7;
+  --vp-c-bg-elv: #fff;
+  --vp-c-bg-soft: #f6f6f7;
+  */
+
+  /** 文本颜色 */
+
+  /*
+  --vp-c-text-1: rgba(60, 60, 67);
+  --vp-c-text-2: rgba(60, 60, 67, 0.78);
+  --vp-c-text-3: rgba(60, 60, 67, 0.56);
+  */
+/* } */
+
+/** 深色模式 */
+/* [data-theme="dark"] { */
+  /*
+  --vp-c-brand-1: #8cccd5;
+  --vp-c-brand-2: #6aa1b7;
+  --vp-c-brand-3: #5086a1;
+  --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
+  */
+
+  /*
+  --vp-c-bg: #1b1b1f;
+  --vp-c-bg-alt: #161618;
+  --vp-c-bg-elv: #202127;
+  --vp-c-bg-soft: #202127;
+  */
+
+  /*
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);
+  --vp-c-text-2: rgba(235, 235, 245, 0.6);
+  --vp-c-text-3: rgba(235, 235, 245, 0.38);
+  */
+/* } */
+
+/* 键盘按钮样式 */
+p > kbd,ul kbd,mark kbd,tr kbd {
+    color: #444d56;
+    vertical-align: middle;
+    background-color: #fafbfc;
+    border: 1px solid #d1d5da;
+    border-bottom-color: #c6cbd1;
+    -webkit-box-shadow: inset 0 -1px 0 #c6cbd1;
+    box-shadow: inset 0 -1px 0 #c6cbd1;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+/* 自定义样式重点 */
+p.important,
+span.important {
+  color: red;
+}
+
+p.different,
+span.different {
+  color: var(--vp-c-important-1);
+}
+
+span.different2 {
+  color: var(--vp-c-warning-soft);
+}
+
+/* 提示容器字体大小 */
+.vp-doc .hint-container{
+  font-size: 16px !important;
+}
+
+/* 导航栏选中位置加下划线 */
+.navbar-menu-link.active[data-v-8ee64944] {
+    box-shadow: 0 2px 0 0;
+}
+
+p.read-more {
+    font-size: inherit;
+    /* font-size: 14px; */
+    font-weight: inherit;
+    background-color: var(--vp-c-bg-safe);
+    border: dashed 1px var(--vp-c-brand-2);
+    border-radius: 8px;
+    padding: 8px 22px;
+    text-decoration: none;
+    display: block;
+    position: relative
+}
+
+/* .read-more:hover {
+    color: currentColor;
+    background-color: var(--vp-c-bg-soft);
+    border: solid 1px var(--vp-c-brand-2);
+} */
+
+/* 侧边栏图标大小 */
+.vp-icon-img {
+  height: 1.5em !important;
+}
+
+/* 表格前几行禁止换行 */
+.vp-doc .list2 table tr td:nth-child(2),
+.vp-doc .list2 table tr th:nth-child(2),
+.vp-doc .list2 table tr th:nth-child(1),
+.vp-doc .list table tr td:nth-child(5),
+.vp-doc .list table tr td:nth-child(6),
+.vp-doc .list table tr td:nth-child(7),
+.vp-doc .list table tr td:nth-child(1) {
+        white-space:nowrap;
+}
+
+/* 表格单元格自定义颜色 */
+.vp-table table th.white,
+.vp-table table td.white {
+  /* color: #000; */
+  background-color: #fff;
+}
+
+.vp-table table th.gray,
+.vp-table table td.gray {
+  background-color: var(--vp-c-bg-soft);
+}

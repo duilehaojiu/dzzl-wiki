@@ -1,0 +1,76 @@
+local_backend: true # 是否启用本地预览
+publishi_mod: deitorial_workflow # 编辑模式是否需要审核
+locale: zh_Hans
+backend:
+  name: test-repo # git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+  commit_message: 
+    create: 创建 {{collection}} 
+
+media_folder: docs/.vuepress/public/cover
+public_folder: /cover
+
+collections:
+#   - name: 'blog'
+#     label: '锻造心得'
+#     folder: 'docs/blog/experience'
+#     create: true
+#     slug: '{{slug}}'
+#     editor:
+#       preview: false
+#     fields:
+#       - { label: '标题', name: 'title', widget: 'string' }
+#       - { label: '创建时间', name: 'createTime', widget: 'datetime', data_format: 'YYYY-MM' }
+#       - { label: '标签', name: 'tags', widget: 'select', options: ['锻造','攻略'] }
+#       - { label: '封面', name: 'cover', widget: 'image', }
+  - name: blog
+    label: 锻造心得
+    label_singular: 文章
+    folder: docs/blog/experience                         # 对应 Plume 集合的 dir 配置
+    slug: '{{slug}}'
+    create: true
+    editor:
+      visualEditing: true
+    fields:
+      - { label: 标题, name: title, widget: string, tagname: h1 }
+      - { label: 作者, name: author, widget: string, required: true}
+      - { label: 发布日期, name: date, widget: datetime, format: YYYY-MM-DD , default: '{{now}}' }
+      - label: 标签
+        name: tags
+        widget: list
+        required: true
+        allow_add: true
+        allow_remove: true
+        default: ['锻造']
+        hint: '多个标签用英文逗号分隔，默认锻造或攻略'
+#      - { label: 分类, name: category, widget: string, required: false, hint: '文章分类（可选）' }
+      - { label: 摘要, name: excerpt, widget: text, required: false, hint: '留空则请在需要摘要的部分下方插入<!-- more --> ' }
+      - label: 封面图
+        name: cover
+        widget: image
+        media_folder: "/docs/blog/image/{{slug}}"
+        public_folder: "/blog/image/{{slug}}"
+        required: false 
+#      - { label: 是否置顶, name: sticky, widget: number, required: false, min: 1, max: 10, hint: '数字越小越靠前' }
+      - { label: 草稿, name: draft, widget: boolean, default: false,hint: '存为草稿即发布后不会显示'}
+      # - { label: 正文, name: body, widget: markdown,hint: '请注意使用标题类别！' }
+      - label: 正文
+        name: body
+        widget: markdown
+        buttons:
+          - bold
+          - italic
+          - strikethrough
+          - code
+          - link
+          - heading-one
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        editor_components:
+          - plume-plot
+          - plume-container
+          - plume-steps
+        hint: '请注意使用标题类别！'

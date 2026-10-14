@@ -1,0 +1,94 @@
+{
+  "hash": "34b1f728",
+  "configHash": "2380ec49",
+  "lockfileHash": "fcd7264e",
+  "browserHash": "3d05e09c",
+  "optimized": {
+    "@floating-ui/vue": {
+      "src": "../../../../node_modules/.pnpm/@floating-ui+vue@2.0.1_vue@3.5.40_typescript@5.9.3_/node_modules/@floating-ui/vue/dist/floating-ui.vue.mjs",
+      "file": "@floating-ui_vue.js",
+      "fileHash": "0612b744",
+      "needsInterop": false
+    },
+    "@iconify/vue": {
+      "src": "../../../../node_modules/.pnpm/@iconify+vue@5.0.1_vue@3.5.40_typescript@5.9.3_/node_modules/@iconify/vue/dist/iconify.mjs",
+      "file": "@iconify_vue.js",
+      "fileHash": "97f2a14f",
+      "needsInterop": false
+    },
+    "@iconify/vue/offline": {
+      "src": "../../../../node_modules/.pnpm/@iconify+vue@5.0.1_vue@3.5.40_typescript@5.9.3_/node_modules/@iconify/vue/dist/offline.mjs",
+      "file": "@iconify_vue_offline.js",
+      "fileHash": "b1a5808f",
+      "needsInterop": false
+    },
+    "@vue/devtools-api": {
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@8.1.5/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "@vue_devtools-api.js",
+      "fileHash": "250920eb",
+      "needsInterop": false
+    },
+    "@vuepress/helper/client": {
+      "src": "../../../../node_modules/.pnpm/@vuepress+helper@2.0.0-rc.1_a7d76216cbb5cea78e8bd2084ed47ddd/node_modules/@vuepress/helper/dist/client/index.js",
+      "file": "@vuepress_helper_client.js",
+      "fileHash": "3529d8dc",
+      "needsInterop": false
+    },
+    "@vuepress/plugin-git/client": {
+      "src": "../../../../node_modules/.pnpm/@vuepress+plugin-git@2.0.0-_a62e2188a31b50515eb392d9ac96ff9b/node_modules/@vuepress/plugin-git/dist/client/index.js",
+      "file": "@vuepress_plugin-git_client.js",
+      "fileHash": "55daa59e",
+      "needsInterop": false
+    },
+    "@vuepress/plugin-markdown-chart/client": {
+      "src": "../../../../node_modules/.pnpm/@vuepress+plugin-markdown-c_e3e73e623b487b33926f97e6aa3078f6/node_modules/@vuepress/plugin-markdown-chart/dist/client/index.js",
+      "file": "@vuepress_plugin-markdown-chart_client.js",
+      "fileHash": "ecce7082",
+      "needsInterop": false
+    },
+    "@vuepress/shared": {
+      "src": "../../../../node_modules/.pnpm/@vuepress+shared@2.0.0-rc.31/node_modules/@vuepress/shared/dist/index.js",
+      "file": "@vuepress_shared.js",
+      "fileHash": "bb3fe3a7",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+core@14.3.0_vue@3.5.40_typescript@5.9.3_/node_modules/@vueuse/core/dist/index.js",
+      "file": "@vueuse_core.js",
+      "fileHash": "802b33d6",
+      "needsInterop": false
+    },
+    "hash-wasm": {
+      "src": "../../../../node_modules/.pnpm/hash-wasm@4.12.0/node_modules/hash-wasm/dist/index.esm.js",
+      "file": "hash-wasm.js",
+      "fileHash": "ddcf0397",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../../node_modules/.pnpm/vue-router@5.2.0_@vue+compi_9b5dae3fbaad22bcc9f3a3263831ddc8/node_modules/vue-router/dist/vue-router.js",
+      "file": "vue-router.js",
+      "fileHash": "a18e7d00",
+      "needsInterop": false
+    },
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.5.40_typescript@5.9.3/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "224bab22",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "client-BmgvOT0W": {
+      "file": "client-BmgvOT0W.js",
+      "isDynamicEntry": false
+    },
+    "dist-DXr24Y6_": {
+      "file": "dist-DXr24Y6_.js",
+      "isDynamicEntry": false
+    },
+    "vue.runtime.esm-bundler-_ogR8zrB": {
+      "file": "vue.runtime.esm-bundler-_ogR8zrB.js",
+      "isDynamicEntry": false
+    }
+  }
+}
